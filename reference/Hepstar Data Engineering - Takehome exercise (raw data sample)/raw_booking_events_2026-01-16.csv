@@ -1,0 +1,3 @@
+event_id,distributor_id,booking_id,event_type,event_ts,priced_call_id,ingest_ts
+ev_bkg_500058_1_2026-01-16,dist_c,bkg_500058,booking_completed_no_purchase,2026-01-15T02:02:36Z,,2026-01-16T19:36:19Z
+ev_bkg_500083_2_2026-01-16,dist_c,bkg_500083,booking_completed_no_purchase,2026-01-16T15:18:58Z,pc_bkg_500083_7,2026-01-16T13:05:58Z

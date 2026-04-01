@@ -1,0 +1,3 @@
+purchase_call_id,request_id,distributor_id,booking_id,offer_id,supplier_id,product_type,purchase_ts,ingest_ts,status,selling_price,commission,currency
+pur_bkg_500030_1,req_buy_bkg_500030_1,dist_c,bkg_500030,off_bkg_500030_sup_vip_863,sup_vip,vip_support,2026-01-12T08:25:46Z,2026-01-16T16:35:16Z,success,26.83,4.19,USD
+pur_bkg_500030_1_retry,req_buy_bkg_500030_1,dist_c,bkg_500030,off_bkg_500030_sup_vip_863,sup_vip,vip_support,2026-01-12T08:25:48Z,2026-01-16T16:40:16Z,success,26.83,4.19,USD

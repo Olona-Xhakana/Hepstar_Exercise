@@ -1,0 +1,2 @@
+event_id,distributor_id,booking_id,event_type,event_ts,priced_call_id,ingest_ts
+ev_bkg_500064_1_2026-01-11,dist_b,bkg_500064,booking_completed_no_purchase,2026-01-15T18:07:19Z,,2026-01-11T12:56:27Z

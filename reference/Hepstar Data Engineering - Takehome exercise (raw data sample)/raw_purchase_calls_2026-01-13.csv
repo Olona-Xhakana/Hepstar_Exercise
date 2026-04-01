@@ -1,0 +1,2 @@
+purchase_call_id,request_id,distributor_id,booking_id,offer_id,supplier_id,product_type,purchase_ts,ingest_ts,status,selling_price,commission,currency
+pur_bkg_500060_1,req_buy_bkg_500060_1,dist_d,bkg_500060,off_bkg_500060_sup_bag_295,sup_bag,baggage,2026-01-14T10:45:29Z,2026-01-13T12:11:12Z,failed,28.94,1.39,USD

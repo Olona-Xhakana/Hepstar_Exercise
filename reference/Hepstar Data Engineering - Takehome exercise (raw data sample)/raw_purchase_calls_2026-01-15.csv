@@ -1,0 +1,3 @@
+purchase_call_id,request_id,distributor_id,booking_id,offer_id,supplier_id,product_type,purchase_ts,ingest_ts,status,selling_price,commission,currency
+pur_bkg_500067_1,req_buy_bkg_500067_1,dist_c,bkg_500067,off_bkg_500067_sup_bag_459,sup_bag,baggage,2026-01-15T09:55:28Z,2026-01-15T13:12:02Z,success,20.54,2.0,USD
+pur_edge_bkg_500014,req_buy_edge_bkg_500014,dist_d,bkg_500014,off_bkg_500014_sup_vip_485,sup_vip,vip_support,2026-01-11T08:01:26Z,2026-01-15T12:10:00Z,success,20.37,8.37,USD
