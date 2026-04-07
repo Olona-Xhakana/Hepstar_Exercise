@@ -1,9 +1,11 @@
-CLONED GIT FIRST!
-bq mk INGESTION
+#Cloned my github repo "https://github.com/Olona-Xhakana/Hepstar_Exercise" on a GCP project called Hepstar. 
+
+bq mk INGESTION // Created a bigquey dataset ingestion, transformation, modelling and presentation.
+
 # 1. Navigate to the raw data sample directory
 cd "reference/Hepstar Data Engineering - Takehome exercise (raw data sample)"
 
-# 2. Verify you see the CSVs now
+# 2. Verify you see the CSVs on shell after cloning the repo
 ls *.csv
 
 # 3.Loop to ingest all 20+ tables
