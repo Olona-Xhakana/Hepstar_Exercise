@@ -1,5 +1,3 @@
-CREATE OR REPLACE VIEW `your_project.raw.vw_purchase_calls_all` AS
-SELECT
-    *,
-    _TABLE_SUFFIX as source_date
-FROM `your_project.raw.purchase_calls_2026_01_*`
+CREATE OR REPLACE VIEW `INGESTION.raw_purchase_calls_vw` AS 
+SELECT * FROM `INGESTION.raw_purchase_calls_2026_*`;
+-- I choose to create a view instead of a table because views they do not take up storage space they are queried each time you want to see data
