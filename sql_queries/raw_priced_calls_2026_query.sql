@@ -1,5 +1,3 @@
-CREATE OR REPLACE VIEW `your_project.raw.vw_priced_calls_all` AS
-SELECT
-    *,
-    _TABLE_SUFFIX as source_date
-FROM `your_project.raw.priced_calls_2026_01_*`
+CREATE OR REPLACE VIEW `INGESTION.raw_priced_calls_vw` AS
+SELECT * FROM `INGESTION.raw_priced_calls_2026*`;
+-- we can add a conditional statement to filter the data so that we dont query loads of data but since it is small there is no need now
