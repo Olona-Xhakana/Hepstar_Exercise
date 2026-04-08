@@ -1,13 +1,13 @@
-CREATE OR REPLACE TABLE analytics.daily_booking_revenue_metrics AS -- Use TABLE for the final layer
+CREATE OR REPLACE TABLE ANALYTICS.daily_booking_revenue_metrics AS -- Using TABLE for the final layer as it is readily available when you want to see data
 
 WITH quoted AS (
   SELECT
     DATE(priced_ts) AS revenue_date,
     distributor_id,
     booking_id
-  FROM raw.priced_calls
+  FROM hepstar.TRANSFORMATION.vw_priced_calls_clean
   WHERE status_code = 200 
-    AND ARRAY_LENGTH(returned_products) > 0
+    AND ARRAY_LENGTH(JSON_QUERY_ARRAY(returned_products)) > 0
   GROUP BY 1, 2, 3
 ),
 
@@ -17,7 +17,7 @@ purchased AS (
     distributor_id,
     SUM(commission) AS total_commission,
     COUNT(*) AS purchase_count
-  FROM raw.purchase_calls
+  FROM hepstar.TRANSFORMATION.vw_purchase_calls_clean
   WHERE status = 'success'
   GROUP BY 1, 2
 ),
@@ -27,7 +27,7 @@ no_purchase AS (
     booking_id,
     distributor_id,
     MAX(1) AS has_no_purchase_event
-  FROM raw.booking_events
+  FROM hepstar.TRANSFORMATION.vw_booking_events_clean
   WHERE event_type = 'booking_completed_no_purchase'
   GROUP BY 1, 2 
 )
