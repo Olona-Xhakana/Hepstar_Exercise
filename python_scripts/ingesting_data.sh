@@ -1,6 +1,6 @@
 #Cloned my github repo "https://github.com/Olona-Xhakana/Hepstar_Exercise" on a GCP project called Hepstar. 
 
-bq mk INGESTION // Created a bigquey dataset ingestion, transformation, modelling and presentation.
+bq mk INGESTION // Created a bigquey dataset ingestion, transformation, and analytics for the final finished data table.
 
 # 1. Navigate to the raw data sample directory
 cd "reference/Hepstar Data Engineering - Takehome exercise (raw data sample)"
