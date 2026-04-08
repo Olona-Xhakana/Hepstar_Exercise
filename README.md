@@ -52,4 +52,21 @@ To handle late-arriving data and retries efficiently:
 - Data freshness checks (no data within expected SLA)
 - Volume anomaly detection (Cloud Monitoring)
 - Cost monitoring for query spikes
+
+## AI Collaboration Disclosure
+
+I utilized Gemini 3 Flash as a technical collaborator during this project.
+
+### How it was used
+The AI assisted in optimizing BigQuery SQL syntax, specifically:
+- Handling JSON arrays using `ARRAY_LENGTH`
+- Ensuring `LEFT JOIN` logic preserved "quote-only" records
+
+### Human Oversight
+I personally:
+- Designed the overall pipeline architecture
+- Defined the business logic and event prioritization (purchase over no_purchase)
+- Validated that the final output aligns with the required schema and metrics
+
+I am fully confident in my understanding of the solution and can explain and defend every part of the implementation.
   
